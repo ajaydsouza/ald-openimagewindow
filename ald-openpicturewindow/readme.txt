@@ -1,8 +1,8 @@
 === Open Picture Window ===
-Tags: Open Picture Window, email, contact
+Tags: Open Picture Window, images, open window, javascript
 Contributors: Ajay D'Souza
 
-Keeps your email safe from spammers when you want to use mailto: links.
+Opens a new browser window containing the image specified using JavaScript. You have the option to choose the features as well as choose if you want it to be centered.
 
 
 == Installation ==
@@ -21,7 +21,7 @@ Keeps your email safe from spammers when you want to use mailto: links.
 
 = Can I customize what is displayed? =
 
-Yes, you can. Please visit http://www.ajaydsouza.com/wordpress/plugins/open-picture-window-plugin/#customizing
+Yes, you can. Please visit http://www.ajaydsouza.com/wordpress/plugins/open-picture-window-plugin/
 
 = Do I really need this plugin? =
 If you would like to display the picture in a new window but are worried about XHTML compliance, then using JavaScript is a good solution for the same. That's where this plugin steps in.
