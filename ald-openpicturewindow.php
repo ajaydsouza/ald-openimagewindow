@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Open Picture Window
-Version: 1.3
+Version: 1.4
 Plugin URI: http://ajaydsouza.com/wordpress/plugins/open-picture-window-plugin/
 Description: Opens a new browser window with the image using JavaScript. All window options settable. Use <code>ald_OpenPictureWindow(theURL, winName, features, myWidth, myHeight, isCenter, myTitle) </code>
 Author: Ajay D'Souza 
@@ -14,7 +14,7 @@ define('ALD_OPW', dirname(__FILE__));
 
 if (!function_exists('get_settings')) {
 	$ald_blog_url = $_SERVER['SCRIPT_URI'];
-	$ald_blog_url = preg_replace("/wp-content\\/plugins\\/ald-openpicturewindow\\/ald-openpicturewindow\\.php$/", "", $ald_blog_url);
+	$ald_blog_url = preg_replace("/wp-content\\/plugins\\/ald-openimagewindow\\/ald-openpicturewindow\\.php$/", "", $ald_blog_url);
 } else {
 	$ald_blog_url = get_settings('siteurl');
 }
@@ -23,7 +23,7 @@ function ald_openpicturewindow()
 {
 	global $ald_blog_url;
 ?>
-<script type="text/javascript" src="<?php echo $ald_blog_url?>/wp-content/plugins/ald-openpicturewindow/ald-openpicturewindow.js"></script>
+<script type="text/javascript" src="<?php echo $ald_blog_url ?>/wp-content/plugins/ald-openimagewindow/ald-openpicturewindow.js"></script>
 <?php
 }
 
