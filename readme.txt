@@ -2,6 +2,7 @@
 Tags: Open Picture Window, images, open window, javascript
 Contributors: Ajay D'Souza
 Stable tag: trunk
+Donate link: http://ajaydsouza.com/donate/
 
 Opens a new browser window containing the image specified using JavaScript.
 
