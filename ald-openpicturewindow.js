@@ -37,7 +37,7 @@ function ald_OpenPictureWindow(theURL, winName, features, myWidth, myHeight, isC
 		write('</script>\n');
 		write('</head>\n');
 		write('<body style="border:0;margin:0;text-align:center">\n');
-		write('<a href="javascript:self.close()" ');
+		write('<a href="javascript:self.close()">');
 		write('<img src="'+ theURL +'" ');
 		write('title="'+ myTitle +'" alt="'+ myTitle +'" ');
 		write('/>');
