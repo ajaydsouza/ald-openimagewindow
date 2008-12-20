@@ -1,4 +1,4 @@
-/* Open Picture Window */
+/* Open Picture Window WordPress Plugin*/
 function ald_OpenPictureWindow(theURL, winName, features, myWidth, myHeight, isCenter, myTitle)
 {
 	var ald_opw = null;
