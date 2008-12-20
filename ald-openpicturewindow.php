@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Open Picture Window
-Version: 1.4
+Version: 1.5
 Plugin URI: http://ajaydsouza.com/wordpress/plugins/open-picture-window-plugin/
 Description: Opens a new browser window with the image using JavaScript. All window options settable. Use <code>ald_OpenPictureWindow(theURL, winName, features, myWidth, myHeight, isCenter, myTitle) </code>
 Author: Ajay D'Souza 
