@@ -12,18 +12,21 @@ if (!defined('ABSPATH')) die("Aren't you supposed to come here via WP-Admin?");
 
 define('ALD_OPW', dirname(__FILE__));
 
-if (!function_exists('get_settings')) {
-	$ald_blog_url = $_SERVER['SCRIPT_URI'];
-	$ald_blog_url = preg_replace("/wp-content\\/plugins\\/ald-openimagewindow\\/ald-openpicturewindow\\.php$/", "", $ald_blog_url);
-} else {
-	$ald_blog_url = get_settings('siteurl');
-}
+// Pre-2.6 compatibility
+if ( !defined('WP_CONTENT_URL') )
+	define( 'WP_CONTENT_URL', get_option('siteurl') . '/wp-content');
+if ( !defined('WP_CONTENT_DIR') )
+	define( 'WP_CONTENT_DIR', ABSPATH . 'wp-content' );
+// Guess the location
+$opw_path = WP_CONTENT_DIR.'/plugins/'.plugin_basename(dirname(__FILE__));
+$opw_url = WP_CONTENT_URL.'/plugins/'.plugin_basename(dirname(__FILE__));
 
 function ald_openpicturewindow()
 {
-	global $ald_blog_url;
+	global $opw_path;
+	global $opw_url;
 ?>
-<script type="text/javascript" src="<?php echo $ald_blog_url ?>/wp-content/plugins/ald-openimagewindow/ald-openpicturewindow.js"></script>
+<script type="text/javascript" src="<?php echo $opw_url ?>/ald-openpicturewindow.js"></script>
 <?php
 }
 
