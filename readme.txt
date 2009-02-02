@@ -1,6 +1,6 @@
 === Open Picture Window ===
 Tags: Open Picture Window, images, open window, javascript
-Contributors: Ajay D'Souza
+Contributors: Ajay
 Stable tag: trunk
 Donate link: http://ajaydsouza.com/donate/
 
